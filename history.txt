@@ -8,3 +8,5 @@ docker container run \
 -p 8080:80 \
 -v $(pwd)/pages:/usr/src/pages \
 -d my-caddy
+docker container stop my-caddy-container
+docker container rm my-caddy-container
