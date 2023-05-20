@@ -1,0 +1,4 @@
+docker image build . -t my-caddy
+docker container run --name my-caddy-container -p 8080:80 -d my-caddy
+docker container stop my-caddy-container
+docker container rm my-caddy-container
